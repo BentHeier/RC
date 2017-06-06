@@ -12,8 +12,8 @@ alias ls='ls --color=auto'
 alias d='cd ~/Downloads'
 alias h='cd ~'
 
-alias bashrc='vim /home/bent/.bashrc'
-alias vimrc='vim /home/bent/.vimrc'
+alias bashrc='vim ~/.bashrc'
+alias vimrc='vim ~/.vimrc'
 
 alias setkeymap='setxkbmap -layout "dvorak,no(dvorak)" -option "grp:alt_shift_toggle"'
 PS1='[\u@\h \W]\$ '
