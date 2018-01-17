@@ -27,7 +27,7 @@ cp vimrc ~/.vimrc
 
 #installs vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-git clone https://github.com/Valloric/YouCompleteMe.git
+git clone https://github.com/Valloric/YouCompleteMe.git ~/YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 #starts vim with the intall command
