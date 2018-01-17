@@ -1,17 +1,13 @@
-if [ "$EUID" -ne 0 ]
-    then echo "Must be run as root"
-    exit
-fi
-apt update
-apt upgrade
-apt install git
-apt install terminator
+sudo apt update
+sudo apt upgrade
+sudo apt install git
+sudo apt install terminator
 snap install spotify
-apt install vim
-apt install openssh-server
-apt install build-essential cmake
-apt install python-dev python3-dev
-apt install chromium-browser
+sudo apt install vim
+sudo apt install openssh-server
+sudo apt install build-essential cmake
+sudo apt install python-dev python3-dev
+sudo apt install chromium-browser
 
 #configures git
 echo Git email
