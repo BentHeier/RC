@@ -13,13 +13,14 @@ apt install build-essential cmake
 apt install python-dev python3-dev
 apt install chromium-browser
 
+#configures git
 echo Git email
 read email
 echo Git name
 read name
-
 git config --global user.email $email
 git config --global user.name  $name
+git config credential.helper store
 
 #moves RCs
 cp bashrc ~/.bashrc
