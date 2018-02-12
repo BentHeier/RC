@@ -8,6 +8,8 @@ sudo apt install openssh-server
 sudo apt install build-essential cmake
 sudo apt install python-dev python3-dev
 sudo apt install chromium-browser
+sudo apt install vlc
+sudo apt install steam
 
 #configures git
 echo Git email
