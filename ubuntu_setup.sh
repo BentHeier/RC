@@ -12,6 +12,7 @@ sudo apt install python-dev python3-dev -y
 sudo apt install chromium-browser -y
 sudo apt install vlc -y
 sudo apt install steam -y
+sudo apt install rdesktop -y
 
 #configures git
 echo Git email
@@ -21,6 +22,10 @@ read name
 git config --global user.email $email
 git config --global user.name  $name
 git config credential.helper store
+
+echo rdesktop config
+read rdesktop
+echo >> \rn alias arx=\"$rdesktop\"
 
 #moves RCs
 cp bashrc ~/.bashrc
