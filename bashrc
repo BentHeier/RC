@@ -21,12 +21,6 @@ gitpush() {
     git push
 }
 
-PS1='[\u@\h \W]\$ '
-# >>>>BEGIN ADDED BY CNCHI INSTALLER<<<< #
+PS1='\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]$'
 BROWSER=/usr/bin/chromium
 EDITOR=/usr/bin/vim
-# >>>>>END ADDED BY CNCHI INSTALLER<<<<< #
-
-if [ $TERMINIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
