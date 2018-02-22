@@ -1,15 +1,17 @@
 sudo apt update
-sudo apt upgrade
-sudo apt install git
-sudo apt install terminator
+sudo apt upgrade -y
 snap install spotify
-sudo apt install vim
-sudo apt install openssh-server
-sudo apt install build-essential cmake
-sudo apt install python-dev python3-dev
-sudo apt install chromium-browser
-sudo apt install vlc
-sudo apt install steam
+sudo apt update -y
+sudo apt upgrade -y 
+sudo apt install git -y
+sudo apt install terminator -y
+sudo apt install vim -y
+sudo apt install openssh-server -y
+sudo apt install build-essential cmake -y
+sudo apt install python-dev python3-dev -y
+sudo apt install chromium-browser -y
+sudo apt install vlc -y
+sudo apt install steam -y
 
 #configures git
 echo Git email
