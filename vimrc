@@ -36,6 +36,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
+Plugin 'flazz/vim-colorschemes'
 
 
 " Set to auto read when a file is changed from the outside
@@ -111,7 +112,6 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme desert
 set background=dark
 
 " Set extra options when running in GUI mode
