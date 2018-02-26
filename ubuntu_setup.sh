@@ -30,6 +30,7 @@ echo >> \rn alias arx=\"$rdesktop\"
 #moves RCs
 cp bashrc ~/.bashrc
 cp vimrc ~/.vimrc
+exec bash
 
 #installs vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
