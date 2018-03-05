@@ -1,18 +1,15 @@
-sudo apt update
-sudo apt upgrade -y
-snap install spotify
-sudo apt update -y
-sudo apt upgrade -y 
-sudo apt install git -y
-sudo apt install terminator -y
-sudo apt install vim -y
-sudo apt install openssh-server -y
-sudo apt install build-essential cmake -y
-sudo apt install python-dev python3-dev -y
-sudo apt install chromium-browser -y
-sudo apt install vlc -y
-sudo apt install steam -y
-sudo apt install rdesktop -y
+
+#installs brew
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew update
+brew upgrade
+
+brew install git
+brew cask install iterm2
+brew install vim
+brew install vlc
+brew install rdesktop
 
 #configures git
 echo Git email
@@ -30,13 +27,12 @@ echo >> \rn alias arx=\"$rdesktop\"
 #moves RCs
 cp bashrc ~/.bashrc
 cp vimrc ~/.vimrc
-exec bash
+cp tmux.conf ~/.tmux.conf
 
 #installs vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe
-git submodule update --init --recursive
 ./install.py --clang-completer
 #starts vim with the intall command
 vim +BundleInstall
