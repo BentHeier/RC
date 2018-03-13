@@ -13,6 +13,7 @@ sudo apt install chromium-browser -y
 sudo apt install vlc -y
 sudo apt install steam -y
 sudo apt install rdesktop -y
+sudo apt install ranger -y
 
 #configures git
 echo Git email
