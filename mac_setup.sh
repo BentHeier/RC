@@ -6,9 +6,7 @@ brew update
 brew upgrade
 
 brew install git
-brew cask install iterm2
 brew install vim
-brew install vlc
 brew install rdesktop
 
 #configures git
@@ -25,7 +23,7 @@ read rdesktop
 echo >> \rn alias arx=\"$rdesktop\"
 
 #moves RCs
-cp bashrc ~/.bashrc
+cp bashrc ~/.bash_profile
 cp vimrc ~/.vimrc
 cp tmux.conf ~/.tmux.conf
 
