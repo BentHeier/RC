@@ -1,16 +1,11 @@
 sudo apt update
 sudo apt upgrade -y
-snap install spotify
 sudo apt install git -y
 sudo apt install terminator -y
 sudo apt install vim -y
 sudo apt install openssh-server -y
 sudo apt install build-essential cmake -y
 sudo apt install python-dev python3-dev -y
-sudo apt install chromium-browser -y
-sudo apt install vlc -y
-sudo apt install steam -y
-sudo apt install rdesktop -y
 sudo apt install ranger -y
 
 #configures git
@@ -21,10 +16,6 @@ read name
 git config --global user.email $email
 git config --global user.name  $name
 git config credential.helper store
-
-echo rdesktop config
-read rdesktop
-echo >> \rn alias arx=\"$rdesktop\"
 
 #moves RCs
 cp bashrc ~/.bashrc
