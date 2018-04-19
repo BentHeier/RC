@@ -14,6 +14,7 @@ alias h='cd ~'
 alias bashrc='vim ~/.bashrc'
 alias vimrc='vim ~/.vimrc'
 alias setkeymap='setxkbmap -layout "dvorak,no(dvorak)" -option "grp:alt_shift_toggle"'
+alias adbIP=" adb shell ifconfig | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'"
 
 gitpush() {
     git add .
@@ -23,5 +24,4 @@ gitpush() {
 }
 
 PS1='\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\n~> '
-BROWSER=/usr/bin/chromium
 EDITOR=/usr/bin/vim
