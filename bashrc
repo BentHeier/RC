@@ -15,6 +15,9 @@ alias bashrc='vim ~/.bashrc'
 alias vimrc='vim ~/.vimrc'
 alias setkeymap='setxkbmap -layout "dvorak,no(dvorak)" -option "grp:alt_shift_toggle"'
 alias adbIP=" adb shell ifconfig | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'"
+alias IP="ifconfig | grep 'inet addr' | cut -d: -f2 | awk '{print $1}'" #for Linux
+#alias IP="ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2" #for Mac
+
 
 gitpush() {
     git add .
