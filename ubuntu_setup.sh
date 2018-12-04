@@ -12,6 +12,7 @@ sudo apt install vlc -y
 sudo apt install steam -y
 sudo apt install rdesktop -y
 sudo apt install ranger -y
+sudo apt install tmux -y
 
 #configures git
 echo Git email
