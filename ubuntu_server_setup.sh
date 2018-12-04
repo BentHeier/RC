@@ -7,6 +7,7 @@ sudo apt install openssh-server -y
 sudo apt install build-essential cmake -y
 sudo apt install python-dev python3-dev -y
 sudo apt install ranger -y
+sudo apt install tmux -y
 
 #configures git
 echo Git email
