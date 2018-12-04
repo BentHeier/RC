@@ -23,6 +23,8 @@ cp bashrc ~/.bashrc
 cp vimrc ~/.vimrc
 mkdir ~/.config/ranger
 cp rc.conf ~/.config/ranger/rc.conf
+mkdir ~./tmux.conf
+cp tmux.conf ~./tmux.conf
 
 #installs vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
