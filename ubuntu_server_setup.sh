@@ -23,7 +23,7 @@ cp bashrc ~/.bashrc
 cp vimrc ~/.vimrc
 mkdir ~/.config/ranger
 cp rc.conf ~/.config/ranger/rc.conf
-mkdir ~./tmux.conf
+touch ~./tmux.conf
 cp tmux.conf ~./tmux.conf
 
 #installs vim plugins
