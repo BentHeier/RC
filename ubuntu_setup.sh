@@ -15,6 +15,7 @@ sudo apt install ranger -y
 sudo apt install tmux -y
 sudo snap install slack
 sudo apt install net-tools -y
+sudo apt install nmap -y
 
 #configures git
 echo rdesktop config
