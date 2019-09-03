@@ -13,19 +13,13 @@ sudo apt install steam -y
 sudo apt install rdesktop -y
 sudo apt install ranger -y
 sudo apt install tmux -y
+sudo snap install slack
+sudo apt install net-tools -y
 
 #configures git
-echo Git email
-read email
-echo Git name
-read name
-git config --global user.email $email
-git config --global user.name  $name
-git config credential.helper store
-
 echo rdesktop config
 read rdesktop
-echo >> \rn alias arx=\"$rdesktop\"
+echo >> \rn alias rdesk=\"$rdesktop\"
 
 #moves RCs
 cp bashrc ~/.bashrc
