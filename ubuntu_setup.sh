@@ -16,6 +16,10 @@ sudo apt install tmux -y
 sudo snap install slack
 sudo apt install net-tools -y
 sudo apt install nmap -y
+sudo apt install curl -y
+sudo apt install python-pip -y
+sudo apt install python3-pip -y
+pip3 install spotify-cli-linux
 
 #configures git
 echo rdesktop config
