@@ -9,15 +9,6 @@ brew install git
 brew install vim
 brew install rdesktop
 
-#configures git
-echo Git email
-read email
-echo Git name
-read name
-git config --global user.email $email
-git config --global user.name  $name
-git config credential.helper store
-
 echo rdesktop config
 read rdesktop
 echo >> \rn alias arx=\"$rdesktop\"

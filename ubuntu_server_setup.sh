@@ -9,22 +9,8 @@ sudo apt install python-dev python3-dev -y
 sudo apt install ranger -y
 sudo apt install tmux -y
 
-#configures git
-echo Git email
-read email
-echo Git name
-read name
-git config --global user.email $email
-git config --global user.name  $name
-git config credential.helper store
-
 #moves RCs
-cp bashrc ~/.bashrc
-cp vimrc ~/.vimrc
-mkdir ~/.config/ranger
-cp rc.conf ~/.config/ranger/rc.conf
-touch ~/.tmux.conf
-cp tmux.conf ~/.tmux.conf
+./rc_update.sh
 
 #installs vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

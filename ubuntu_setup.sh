@@ -21,18 +21,9 @@ sudo apt install python-pip -y
 sudo apt install python3-pip -y
 pip3 install spotify-cli-linux
 
-#configures git
-echo rdesktop config
-read rdesktop
-echo >> \rn alias rdesk=\"$rdesktop\"
 
 #moves RCs
-cp bashrc ~/.bashrc
-cp vimrc ~/.vimrc
-mkdir ~/.config/ranger
-cp rc.conf ~/.config/ranger/rc.conf
-touch ~/.tmux.conf
-cp tmux.conf ~/.tmux.conf
+./rc_update.sh
 
 #installs vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
