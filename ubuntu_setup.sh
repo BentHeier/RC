@@ -21,6 +21,7 @@ sudo apt install python-pip -y
 sudo apt install python3-pip -y
 pip3 install spotify-cli-linux
 sudo apt install yakuake -y
+sudo apt install flameshot -y
 
 #moves RCs
 ./rc_update.sh
