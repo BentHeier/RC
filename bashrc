@@ -5,6 +5,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+if [ "$PS1" ]; then
+complete -cf sudo
+fi
+
 alias l='ls'
 alias ll='ls -l'
 alias la='ls -la'
